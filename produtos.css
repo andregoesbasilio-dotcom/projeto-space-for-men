@@ -12,7 +12,7 @@ header {
 nav {
     position: absolute;
     top: 126px;
-    right: 0px
+    right: 0px;
 }
 
 nav li {
@@ -29,7 +29,6 @@ nav a {
 
 }
 
-
 nav a:hover {
     color: #c78c19;
     text-decoration: underline;
@@ -42,9 +41,8 @@ nav a:hover {
 
 }
 
-
-
 .produtos li {
+
     display: inline-block;
     text-align: center;
     width: 30%;
@@ -52,34 +50,76 @@ nav a:hover {
     margin: 0 1.5%;
     padding: 30px 20px;
     box-sizing: border-box;
-    border: 2px solid #000000;
+    border: solid 2px #000000;
     border-radius: 10px;
 
+
 }
-
-
-
 
 .produtos li:hover {
     border-color: #c78c19;
 }
 
+.produtos li:active {
+    border-color: #088c19;
+}
 
-
+.produtos li:hover h2 {
+    font-size: 34px;
+}
 
 .produtos h2 {
     font-size: 22px;
     font-weight: bold;
-
 }
 
 .descricao {
     font-size: 18px;
-
 }
 
 .preco {
-    font: size 22px;
+    font-size: 22px;
     font-weight: bold;
     margin-top: 10px;
+
+}
+
+footer {
+    text-align: center;
+    background-image: url(./img/bg.jpg);
+    color: white;
+    padding: 40px 0;
+    font-size: 13px;
+
+
+}
+
+@media screen and (max-width: 480px) {
+    .caixa {
+        width: auto;
+    }
+
+    h1 {
+        text-align: center;
+
+    }
+
+    nav {
+        position: static;
+    }
+
+    .produtos {
+       width: 100%;
+       padding: 10px;
+       box-sizing: border-box;
+    }
+
+    .produtos li {
+        display: block;
+        width: 100%;
+        margin: 10px 0;
+        box-sizing: border-box;
+    }
+
+
 }
